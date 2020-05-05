@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,19 +12,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_05_091249) do
-
+ActiveRecord::Schema.define(version: 20_200_505_091_249) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension 'plpgsql'
 
-  create_table "tasks", force: :cascade do |t|
-    t.string "task_name"
-    t.string "limit", default: "例:2020/05/31"
-    t.string "status"
-    t.string "priority"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "content"
+  create_table 'tasks', force: :cascade do |t|
+    t.string 'task_name'
+    t.string 'limit', default: '例:2020/05/31'
+    t.string 'status'
+    t.string 'priority'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.string 'content'
   end
-
 end
