@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 RSpec.describe 'タスク管理機能', type: :system do
   describe 'タスク一覧画面' do
@@ -28,9 +26,9 @@ RSpec.describe 'タスク管理機能', type: :system do
       it 'データが保存される' do
         visit new_task_path
         fill_in 'Task name', with: 'タスク'
-        fill_in 'Limit', with: '2020.05.30'
+        fill_in 'Content', with: 'コンテンツ'
         click_on '登録する'
-        expect(page).to have_content 'limit', '2020.05.30'
+        expect(page).to have_content 'content', 'コンテンツ'
       end
     end
   end
