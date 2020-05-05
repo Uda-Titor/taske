@@ -1,24 +1,27 @@
-# README
+```
+create_table :users do |t|
+  t.string :name
+  t.string :email
+  t.string :password
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  t.timestamps
+end
+```
 
-Things you may want to cover:
+```
+create_table :tasks do |t|
+  t.string :task
+  t.string :limit
+  t.string :status
+  t.string :priority
+  t.timestamps
+end
+```
+```
+create_table :rabels do |t|
+  t.string :task_id
+  t.string :rabel
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  t.timestamps
+end
+```
