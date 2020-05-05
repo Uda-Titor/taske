@@ -1,27 +1,12 @@
-```
-create_table :users do |t|
-  t.string :name
-  t.string :email
-  t.string :password
+user table
+|name|email|password|
+|:--:|:--:|:--:|
+| TD | TD  |TD      |
 
-  t.timestamps
-end
-```
+task table
+|task_name|limit|status|priority|user_id|
+|:--:|:--:|:--:|:--:|:--:|
 
-```
-create_table :tasks do |t|
-  t.string :task
-  t.string :limit
-  t.string :status
-  t.string :priority
-  t.timestamps
-end
-```
-```
-create_table :rabels do |t|
-  t.string :task_id
-  t.string :rabel
-
-  t.timestamps
-end
-```
+rabel
+|task_id|rabel|
+|:--:|:--:|
